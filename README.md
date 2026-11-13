@@ -15,6 +15,18 @@ No code, no SystemUI patching; remove the module and you're back to stock.
 | Install path | `/product/overlay/NoSplitShade.apk` (via Magisk) |
 | Tested on | Retroid Pocket Classic, GammaOS Next (Android 13 / LineageOS 20) |
 
+## Why
+
+On GammaOS Next the Retroid Pocket Classic shows a tablet-style split shade:
+Quick Settings tiles squeezed into the left half with cut-off labels, and
+notifications on the right. For anyone with low vision or larger fingers,
+that's hard to read and hard to tap. This module restores the full-width,
+phone-style shade. Full story and investigation: **[docs/WRITEUP.md](docs/WRITEUP.md)**.
+
+| Before | After |
+|---|---|
+| ![Before](docs/images/before.jpg) | ![After](docs/images/after.jpg) |
+
 ## Install
 
 1. Download `NoSplitShade-vX.Y-magisk.zip` from [Releases](../../releases).
@@ -114,6 +126,8 @@ AndroidManifest.xml        overlay manifest (target, priority, isStatic)
 res/values*/bools.xml      the overridden bool, one file per qualifier
 module/                    Magisk template (module.prop, customize.sh, META-INF)
 build.sh                   compile → link → zipalign → sign → package
+docs/WRITEUP.md            problem, investigation, fix, verification
+docs/images/               before/after photos
 ```
 
 ## Troubleshooting
