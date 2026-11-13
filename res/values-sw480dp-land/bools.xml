@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Real AOSP / LineageOS 20 (Android 13) SystemUI name. -->
+    <bool name="config_use_split_notification_shade">false</bool>
+    <!-- CamelCase name from the original request; unmatched overlay entries are ignored. -->
+    <bool name="config_useSplitNotificationShade">false</bool>
+</resources>

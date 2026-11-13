@@ -1,0 +1,12 @@
+# Build outputs (attach release zips to GitHub Releases instead)
+build/
+out/
+*.apk
+*.idsig
+*.zip
+# Signing keys (build.sh generates a throwaway key if missing)
+keys/
+*.keystore
+*.jks
+# Local toolchains
+tools/
