@@ -26,6 +26,7 @@ phone-style shade. Full story and investigation: **[docs/WRITEUP.md](docs/WRITEU
 | Before | After |
 |---|---|
 | ![Before](docs/images/before.jpg) | ![After](docs/images/after.jpg) |
+| From GammaOS Discord | Current Owned RPC |
 
 ## Install
 
@@ -143,7 +144,3 @@ docs/images/               before/after photos
 
 Modifies system UI behavior via Magisk. Use at your own risk; keep a way to boot
 without modules (Magisk safe mode / `adb wait-for-device shell magisk --remove-modules`).
-
-## License
-
-[MIT](LICENSE)
